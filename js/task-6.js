@@ -1,7 +1,5 @@
 let input;
 const numbers = [];
-let total = 0;
-let message;
 
 const summ = function (numbersArray) {
   let sum = 0;
@@ -20,16 +18,10 @@ while (true) {
   }
 
   if (input === null) {
-    if (numbers.length === 0) {
-      break;
-    }
-
-    summ(numbers);
-    message = `Общая сумма чисел равна ${sum}`;
     break;
   }
 
   numbers.push(Number(input));
 }
 
-console.log(message);
+console.log(`Общая сумма чисел равна ${summ(numbers)}`);
