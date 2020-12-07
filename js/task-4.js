@@ -1,7 +1,7 @@
 const formatString = function (string) {
   const MAX_LENGTH = 40;
-  if (string.length < MAX_LENGTH) return string;
-  return string.slice(0, MAX_LENGTH) + "...";
+  if (string.length <= MAX_LENGTH) return string;
+  return string.slice(0, MAX_LENGTH - 3) + "...";
 };
 
 /*

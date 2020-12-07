@@ -22,6 +22,8 @@ while (true) {
   }
 
   numbers.push(Number(input));
-}
 
-console.log(`Общая сумма чисел равна ${summ(numbers)}`);
+  if (numbers.length) {
+    console.log(`Общая сумма чисел равна ${summ(numbers)}`);
+  }
+}
